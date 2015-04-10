@@ -7,9 +7,11 @@ It is typesetted in [Roboto](http://developer.android.com/design/style/typograph
 
 # License
 
-Copyright (C) 2015, Jean-Sébastien Gosselin
+Copyright (C) 2015 Jean-Sébastien Gosselin
+
 Copyright (C) 2014 LaTeX Templates
-Copyright (C) 2012, Adrien Friggeri
+
+Copyright (C) 2012 Adrien Friggeri
 
 ## sublicense
 
