@@ -15,4 +15,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.auxlock
+.tm_properties
 cv-blx.bib
+bck
+Jean-Sébastien Gosselin-1.pdf
