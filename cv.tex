@@ -1,13 +1,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Friggeri Resume/CV
-% XeLaTeX Template
-% Version 1.1 (9/2/15)
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% Friggeri-Modified CV 
+% Version 1.0 (10/04/2015)
 %
-% Original author:
-% Adrien Friggeri (adrien@friggeri.net)
+% This document is based on a template that was originally created
+% by Adrien Friggeri and that has been modified by http://www.LaTeXTemplates.com
+%
+% Copyright (C) 2015 Jean-Sébastien Gosselin
+% https://github.com/jnsebgosselin/Curriculum-Vitae
+%
+% Copyright (C) 2014 LaTeX Templates
+% https://github.com/jnsebgosselin/Curriculum-Vitae
+%
+% Copyright (C) 2012 Adrien Friggeri (adrien@friggeri.net) 
 % https://github.com/afriggeri/CV
 %
 % License:
@@ -18,21 +23,24 @@
 % needs to be compiled with biber rather than bibtex.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 %
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 %
-\usepackage{afterpage}
-\usepackage{array}
-\usepackage{graphicx}
-%
-%http://tex.stackexchange.com/questions/121891/friggeri-resume-very-different-rendering-in-different-readers
-%https://gist.github.com/sway/3101743
-%https://coderwall.com/p/r67dyq/using-font-awesome-with-xe-latex
-%
+\usepackage{afterpage} % to change the geometry of pages
+\usepackage{array}     % To add extra row height to tabular
+\usepackage{graphicx}  % to include images
+\usepackage{enumitem}  % control left margin of itemize environment
+
+%-----------------------------------------------
+% ADDING FONT AWESOME
+%-----------------------------------------------
+% http://tex.stackexchange.com/questions/121891/
+% https://gist.github.com/sway/3101743
+% https://coderwall.com/p/r67dyq/using-font-awesome-with-xe-latex
+
 \usepackage{fontawesome}
-\usepackage{enumitem} % control left margin of itemize environment
 %
 \newfontfamily{\FA}{FontAwesome}
 %
@@ -48,49 +56,78 @@
 %
 \def\circleFull{\small\color{gray}{\FA \faCircleFull}\hspace{0.15cm}}
 \def\circleEmpty{\small\color{gray}{\FA \faCircleEmpty}\hspace{0.15cm}}
+
+%-----------------------------------------------
+%	SKILLS SCALE COMMAND
+%-----------------------------------------------
+
+\newcommand{\skillScale}[1]
+{
+\ifnum#1=1
+    \circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty
+\else\ifnum#1=2
+    \circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty
+\else\ifnum#1=3
+    \circleFull\circleFull\circleFull\circleEmpty\circleEmpty
+\else\ifnum#1=4
+    \circleFull\circleFull\circleFull\circleFull\circleEmpty
+\else\ifnum#1=5
+    \circleFull\circleFull\circleFull\circleFull\circleFull
+\else 
+    \circleEmpty\circleEmpty\circleEmpty\circleEmpty\circleEmpty
+\fi\fi\fi\fi\fi
+}
 %
 \begin{document}
 %
-\header{Jean-Sébastien}{Gosselin}{Ingénieur Junior \& Doctorant en Hydrogéologie} % Your name and current job title/field •
+\header{Jean-Sébastien}{Gosselin}{Ingénieur Junior \& Doctorant en Hydrogéologie} % Your name and current job title/field
 %
-%----------------------------------------------------------------------------------------
-%	SIDEBAR SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------
+%	SIDEBAR SECTION (first page)
+%-----------------------------------------------
 %
-\begin{aside} % In the aside, each new line forces a line break
-\section{contact}\vspace{5pt}
-\home\space 6100 Paul-Gury, \#307
-\hspace{0.43cm}Québec, Qc, Canada
-\hspace{0.43cm}G1P 4R3\vspace{5pt}
-\phoneb\space (581) 996 4070
-\href{mailto:jnsebgosselin@gmail.com}{\mail\space jnsebgosselin@gmail.com}
-\vspace{10pt}\section{à propos}\vspace{5pt}
-32 ans
-Canadien
-Marié, 1 enfant\vspace{5pt}
-\href{http://www.liamg.ca/qui-sommes-nous/jean-sebastien-gosselin/}{\globe\hspace{0.1cm} http://www.liamg.ca}
-\href{https://www.linkedin.com/in/jnsebgosselin}{\linkedin\hspace{0.1cm} LinkedIn: jnsebgosselin}
-\href{https://www.facebook.com/jnsebgosselin}{\facebook\hspace{0.1cm} Facebook: jnsebgosselin}
-\href{https://github.com/jnsebgosselin}{\github\hspace{0.1cm} GitHub: jnsebgosselin}
-%
-\vspace{10pt}\section{langues}\vspace{5pt}
-Français (maternel)
-Anglais (courant)
-%
-\vspace{10pt}\section{intérêts professionnels}\vspace{10pt}
-\includegraphics[width=4.5cm]{prof_interests_graph}
-%
-\vspace{5pt}\section{programmation}\vspace{-5pt}
-{\setlength{\extrarowheight}{2pt}%
-\begin{tabular}{@{}m{2cm}m{2.5cm}@{}}
-  Python 2.7&\hfill\circleFull\circleFull\circleFull\circleFull\circleEmpty
-  Matlab&\hfill\circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-  LabView&\hfill\circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty
-  \LaTeX&\hfill\circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-  HTML&\hfill\circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty  
-  Fortran 95&\hfill\circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty  
-\end{tabular}}
-%
+\begin{aside} % In the aside environment, each new line forces a line break
+	\section{contact}%
+	    \vspace{5pt}
+		\home\space 6100 Paul-Gury, \#307
+		\hspace{0.43cm}Québec, Qc, Canada
+		\hspace{0.43cm}G1P 4R3\vspace{5pt}
+		\phoneb\space (581) 996 4070
+		\href{mailto:jnsebgosselin@gmail.com}{\mail\space jnsebgosselin@gmail.com}
+		\vspace{10pt}%
+	\section{à propos}%
+		\vspace{5pt}
+		32 ans
+		Canadien
+		Marié, 1 enfant%
+		\vspace{5pt}
+		\href{http://www.liamg.ca/qui-sommes-nous/jean-sebastien-gosselin/}{\globe\hspace{0.1cm} tp://www.liamg.ca}
+		\href{https://www.linkedin.com/in/jnsebgosselin}{\linkedin\hspace{0.1cm} LinkedIn: jnsebgosselin}
+		\href{https://www.facebook.com/jnsebgosselin}{\facebook\hspace{0.1cm} Facebook: jnsebgosselin}
+		\href{https://github.com/jnsebgosselin}{\github\hspace{0.1cm} GitHub: jnsebgosselin}
+		\vspace{10pt}%
+	\section{langues}%
+		\vspace{5pt}
+		Français (maternel)
+		Anglais (courant)
+		\vspace{10pt}%
+	\section{intérêts professionnels}%
+		\vspace{10pt}
+		\includegraphics[width=4.5cm]{prof_interests_graph}
+		\vspace{5pt}%
+	\section{programmation}%
+		\vspace{-5pt}
+		{%
+		\setlength{\extrarowheight}{2pt}%
+		\begin{tabular}{@{}m{2cm}m{2.5cm}@{}}
+			Python 2.7 & \hfill \skillScale{4}
+			Matlab     & \hfill \skillScale{3}
+			LabView    & \hfill \skillScale{2}
+			\LaTeX     & \hfill \skillScale{3}
+			HTML       & \hfill \skillScale{1}
+			Fortran 95 & \hfill \skillScale{1} 
+		\end{tabular}%
+		}
 \end{aside}
 %{\color{red} $\varheartsuit$}
 %
@@ -99,6 +136,7 @@ Anglais (courant)
 %----------------------------------------------------------------------------------------
 %
 \section{résumé}
+%
 \normalfont{Je suis un professionnel qui termine actuellement un doctorat en hydrogéologie. Je possède une expérience académique et professionnelle diversifiée en physique, en modélisation et en informatique que je souhaite mettre à profit pour résoudre des problèmes techniques concrets et pointus dans le domaine des sciences de la Terre au Québec.}
 %
 %\setlength{\parindent}{15pt}Je suis une personne sociale en petit groupe qui aime travailler de manière autonome. J'ai un esprit inventif et débrouillard et j'aime élaborer des solutions originales. J'ai un souci du détail très prononcé. Je n'ai pas peur de relever de nouveaux défis, mais j'aime également avoir une certaine constance et routine dans mon travail.\setlength{\parindent}{0pt}
@@ -232,44 +270,54 @@ Anglais (courant)
      \end{itemize}
     }
 \end{entrylist}
-
+%
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION (Second Page)
 %----------------------------------------------------------------------------------------
+%
 \begin{aside2}
-  \section{logiciels informatiques} %\vspace{-5pt}
-    \parbox[t]{4.5cm}{{\footnotesize\emph{Intérêt et capacité d'apprentissage de nouveaux logiciels élevés}}}
-    \vspace{10pt}{\addfontfeature{Color=lightgray}Bureautique}\vspace{-8pt}
-    \begin{tabular}{@{}m{2cm}m{2.5cm}@{}}
-      LibreOffice&\hfill\circleFull\circleFull\circleFull\circleFull\circleEmpty
-      MS Office&\hfill\circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-      Zotero&\hfill\circleFull\circleFull\circleFull\circleFull\circleEmpty
-      Thunderbird&\hfill\circleFull\circleFull\circleFull\circleFull\circleEmpty
-    \end{tabular}    
-    \vspace{-6pt}{\addfontfeature{Color=lightgray}Design Graphique}\vspace{-6pt}
-    \begin{tabular}{@{}m{2cm}m{2.5cm}@{}}
-      Inkscape&\hfill\circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-      GIMP&\hfill\circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty
-      MS Visio&\hfill\circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-      Scribus&\hfill\circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty 
-    \end{tabular}
-    \vspace{-6pt}{\addfontfeature{Color=lightgray}Systèmes d'Exploitation}\vspace{-6pt}
-    \begin{tabular}{@{}m{2cm}m{2.5cm}@{}}
-      Linux&\hfill\circleFull\circleFull\circleFull\circleFull\circleEmpty
-      Windows&\hfill\circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-    \end{tabular}    
-    \vspace{-6pt}{\addfontfeature{Color=lightgray}Logiciels Spécialisés}\vspace{-6pt}
-        \begin{tabular}{@{}m{2.5cm}m{2cm}@{}}
-          ArcGIS&\hfill\circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty
-          \footnotesize{Visual MODFLOW}&\hfill\circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty
-          Tecplot&\hfill\circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty        
-        \end{tabular}
-  %------------------------------------------------     
-  \vspace{-5pt}\section{intérêts personels}\vspace{10pt}
-    Musique, Lecture,
-    Logiciels Open Source,
-    Nouvelles Technologies,
-    Badminton et Vélo
+    \section{logiciels informatiques}
+	    \parbox[t]{4.5cm}{{\footnotesize\emph{Intérêt et capacité d'apprentissage de nouveaux logiciels élevés}}}
+	    \vspace{10pt}%
+	    {\addfontfeature{Color=lightgray}Bureautique}%
+	    \vspace{-8pt}
+	    \begin{tabular}{@{}m{2.4cm}m{2.1cm}@{}}
+	        LibreOffice & \hfill \skillScale{4}
+	        MS Office   & \hfill \skillScale{3}
+	        Zotero      & \hfill \skillScale{4}
+	        Thunderbird & \hfill \skillScale{4}
+	    \end{tabular}    
+	    \vspace{-6pt}%
+	    {\addfontfeature{Color=lightgray}Design Graphique}%
+	    \vspace{-6pt}
+	    \begin{tabular}{@{}m{2.4cm}m{2.1cm}@{}}
+	        Inkscape & \hfill \skillScale{3}
+	        GIMP     & \hfill \skillScale{2}
+	        MS Visio & \hfill \skillScale{3}
+	        Scribus  & \hfill \skillScale{2}
+	    \end{tabular}
+	    \vspace{-6pt}%
+	    {\addfontfeature{Color=lightgray}Systèmes d'Exploitation}%
+	    \vspace{-6pt}
+	    \begin{tabular}{@{}m{2.4cm}m{2.1cm}@{}}
+	        Linux   & \hfill \skillScale{4}
+	        Windows & \hfill \skillScale{3}
+	    \end{tabular}    
+	    \vspace{-6pt}%
+	    {\addfontfeature{Color=lightgray}Logiciels Spécialisés}%
+	    \vspace{-6pt}
+	    \begin{tabular}{@{}m{2.4cm}m{2.1cm}@{}}
+	        ArcGIS & \hfill \skillScale{2}
+	        \footnotesize{Visual MODFLOW} & \hfill \skillScale{1}
+	        Tecplot & \hfill \skillScale{1}        
+	    \end{tabular}        
+        \vspace{-5pt}%
+    \section{intérêts personels}%
+        \vspace{10pt}
+        Musique, Lecture,
+        Logiciels Open Source,
+        Nouvelles Technologies,
+        Badminton et Vélo
 \end{aside2}
 %
 %----------------------------------------------------------------------------------------
