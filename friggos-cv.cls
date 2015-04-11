@@ -1,20 +1,18 @@
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+\ProvidesClass{friggos-cv}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
-\DeclareOption*{%
-  \PassOptionsToClass{\CurrentOption}{article}%
-}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 \LoadClass{article}
 
-%%%%%%%%%%
-% Colors %
-%%%%%%%%%%
+%===============================================
+% COLORS 
+%===============================================
 
 \RequirePackage{xcolor}
 
-\definecolor{white}{RGB}{255,255,255}
+\definecolor{white}{HTML}{FFFFFF}
 
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
@@ -42,41 +40,93 @@
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
 
-%%%%%%%%%
-% Fonts %
-%%%%%%%%%
+%===============================================
+% FONTS 
+%===============================================
+
+%-----------------------------------------------
+% ROBOTO
+%-----------------------------------------------
+
+%http://graphicdesign.stackexchange.com/questions/15462/
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-%http://graphicdesign.stackexchange.com/questions/15462/is-there-a-free-helvetica-neue-alternative
-\newfontfamily\bodyfont[]{Roboto}
-\newfontfamily\thinfont[]{Roboto Thin}
-\newfontfamily\headingfont[]{Roboto Condensed Bold}
+\newfontfamily\bodyfont[Path = fonts/]{Roboto-Regular}
+\newfontfamily\thinfont[Path = fonts/]{Roboto-Thin}
+\newfontfamily\headingfont[Path = fonts/]{RobotoCondensed-Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Roboto Light}
+\setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Roboto-Light}
 
-%\newfontfamily\bodyfont[]{Helvetica Neue LT Std}
+%-----------------------------------------------
+% HELVETICA
+%-----------------------------------------------
+
+%\newfontfamily\bodyfont[]{HelveticaNeueLTStd-Lt}
 %\newfontfamily\thinfont[]{HelveticaNeueLTStd-UltLt}
 %\newfontfamily\headingfont[]{HelveticaNeueLTStd-BdCn}
 
 %\defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[Mapping=tex-text, Color=textcolor]{HelveticaNeueLTStd-Lt}
 
+%-----------------------------------------------
+% MATH
+%-----------------------------------------------
+
+%\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 %\setmathfont{XITS Math}
 
-%%%%%%%%%%
-% Header %
-%%%%%%%%%%
+%-----------------------------------------------
+% FONT AWESOME
+%-----------------------------------------------
+
+% http://tex.stackexchange.com/questions/121891/
+% https://gist.github.com/sway/3101743
+% https://coderwall.com/p/r67dyq/using-font-awesome-with-xe-latex
+%http://tex.stackexchange.com/questions/134121/fontawesome-icons-are-getting-too-big-using-xelatex/134244#134244
+
+\usepackage{fontawesome}
+\newfontfamily\FA[Path = fonts/]{fontawesome-webfont}
+
+\def\github{\color{gray}{\FA \faGithubSign}}
+\def\facebook{\color{gray}{\FA \faFacebookSign}}
+\def\linkedin{\color{gray}{\FA \faLinkedinSign}}
+\def\phonea{\color{gray}{\FA \faPhone}}
+\def\phoneb{\color{gray}{\FA \faPhoneSign}}
+\def\phonec{\color{gray}{\FA \faMobile}}
+\def\home{\color{gray}{\FA \faHome}}
+\def\mail{\color{gray}{\FA \faEnvelopeAlt}}
+\def\globe{\color{gray}{\FA \faGlobe}}
+
+\def\circleFull{\small\color{gray}{\FA \faCircleFull}\hspace{0.15cm}}
+\def\circleEmpty{\small\color{gray}{\FA \faCircleEmpty}\hspace{0.15cm}}
+
+\newcommand{\skillScale}[1]
+{
+\ifnum#1=1
+    \circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty
+\else\ifnum#1=2
+    \circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty
+\else\ifnum#1=3
+    \circleFull\circleFull\circleFull\circleEmpty\circleEmpty
+\else\ifnum#1=4
+    \circleFull\circleFull\circleFull\circleFull\circleEmpty
+\else\ifnum#1=5
+    \circleFull\circleFull\circleFull\circleFull\circleFull
+\else 
+    \circleEmpty\circleEmpty\circleEmpty\circleEmpty\circleEmpty
+\fi\fi\fi\fi\fi
+}
+
+%===============================================
+% HEADER 
+%===============================================
 
 \RequirePackage{tikz}
 
-\newcommand{\rolefont}{%
-  \fontsize{14pt}{24pt}\selectfont%
-  \thinfont%
-  \color{white}%
-}
+\newcommand{\rolefont}{\fontsize{14pt}{24pt} %
+            \selectfont\thinfont\color{white}}
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
@@ -94,9 +144,9 @@
   \vspace{-2\parskip}
 }
 
-%%%%%%%%%%%%%
-% Structure %
-%%%%%%%%%%%%%
+%===============================================
+% STRUCTURE 
+%===============================================
 
 \RequirePackage{parskip}
 
@@ -134,9 +184,10 @@
 
 \pagestyle{empty}
 
-%%%%%%%%%%%%%%%%%%%%
-% List environment %
-%%%%%%%%%%%%%%%%%%%%
+%===============================================
+% LIST ENVIRONMENT 
+%===============================================
+
 %\usepackage{tabularx}
 %\usepackage{array}
 %\usepackage{ltablex}
@@ -190,25 +241,26 @@
         \footnotesize\addfontfeature{Color=gray}#5\vspace{\parsep}%
         }\vspace{5pt}\\}
 
-%%%%%%%%%%%%%%
-% Side block %
-%%%%%%%%%%%%%%
+%===============================================
+% SIDE BLOCK 
+%===============================================
 
 \RequirePackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
+
 \newenvironment{aside}{%
-  \let\oldsection\section
-  \renewcommand{\section}[1]{
+    \let\oldsection\section
+    \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4.5}(15.85, 4.33)
-  \begin{flushleft}
-  \obeycr
+    \begin{textblock}{4.5}(15.85, 4.33)
+        \begin{flushleft}
+        \obeycr
 }{%
-  \restorecr
-  \end{flushleft}
-  \end{textblock}
+        \restorecr
+        \end{flushleft}
+    \end{textblock}
   \let\section\oldsection
 }
 
@@ -227,140 +279,9 @@
   \let\section\oldsection
 }
 
-%%%%%%%%%%%%%%%%
-% Bibliography %
-%%%%%%%%%%%%%%%%
-
-\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
-
-\DeclareFieldFormat[article]{title}{#1\par}
-\DeclareFieldFormat[book]{title}{#1\par}
-\DeclareFieldFormat[inproceedings]{title}{#1\par}
-\DeclareFieldFormat[misc]{title}{#1\par}
-\DeclareFieldFormat[report]{title}{#1\par}
-
-\DeclareBibliographyDriver{article}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \usebibmacro{journal+issuetitle}%
-    \setunit{\space}%
-    \printfield{pages}%
-    \newunit%
-    \printlist{publisher}%
-    \setunit*{\addcomma\space}%
-    \printfield{year}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareBibliographyDriver{book}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \printlist{publisher}%
-    \setunit*{\addcomma\space}%
-    \printfield{note}%
-    \setunit*{\addcomma\space}%
-    \printfield{year}%
-    \setunit{\addcomma\space}%
-    \printlist{location}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-
-\DeclareBibliographyDriver{inproceedings}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}%
-    \printfield{booktitle}%
-    \setunit{\addcomma\space}%
-    \printfield{year}%
-    \setunit{\addcomma\space}%
-    \printlist{location}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareBibliographyDriver{misc}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \printfield{booktitle}%
-    \setunit*{\addcomma\space}%
-    \printfield{note}%
-    \setunit*{\addcomma\space}%
-    \printfield{year}%
-    \setunit{\addcomma\space}%
-    \printlist{location}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareBibliographyDriver{report}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \printfield{type}%
-    \setunit{\space}%
-    \printfield{number}%
-    \setunit{\addcomma\space}%
-    \printfield{year}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareNameFormat{author}{%
-  \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
-  \ifthenelse{\value{listcount}<\value{liststop}}
-    {\addcomma\space}
-    {}%
-}
-
-\newcommand{\printbibsection}[2]{
-  \begin{refsection}
-    \nocite{*}
-    \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
-  \end{refsection}
-}
-
-\DeclareSortingScheme{chronological}{
-  \sort[direction=descending]{\field{year}}
-  \sort[direction=descending]{\field{month}}
-}
-
-
-
-%%%%%%%%%%%%%%%%
-% Other tweaks %
-%%%%%%%%%%%%%%%%
+%===============================================
+% OTHER TWEAKS 
+%===============================================
 
 \RequirePackage[left=1.25cm,top=2cm,right=6.5cm,bottom=1.25cm,nohead,nofoot]{geometry}
 \definecolor{lblue}{HTML}{0000EE}

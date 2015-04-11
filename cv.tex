@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Friggeri-Modified CV 
-% Version 1.0 (10/04/2015)
+% Version 1.1 (10/04/2015)
 %
 % This document is based on a template that was originally created
 % by Adrien Friggeri and that has been modified by http://www.LaTeXTemplates.com
@@ -23,76 +23,29 @@
 % needs to be compiled with biber rather than bibtex.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
-
-\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+%
+\documentclass[]{friggos-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
 \usepackage{afterpage} % to change the geometry of pages
 \usepackage{array}     % To add extra row height to tabular
 \usepackage{graphicx}  % to include images
 \usepackage{enumitem}  % control left margin of itemize environment
 
-%-----------------------------------------------
-% ADDING FONT AWESOME
-%-----------------------------------------------
-% http://tex.stackexchange.com/questions/121891/
-% https://gist.github.com/sway/3101743
-% https://coderwall.com/p/r67dyq/using-font-awesome-with-xe-latex
-
-\usepackage{fontawesome}
-
-\newfontfamily{\FA}{FontAwesome}
-
-\def\github{\color{gray}{\FA \faGithubSign}}
-\def\facebook{\color{gray}{\FA \faFacebookSign}}
-\def\linkedin{\color{gray}{\FA \faLinkedinSign}}
-\def\phonea{\color{gray}{\FA \faPhone}}
-\def\phoneb{\color{gray}{\FA \faPhoneSign}}
-\def\phonec{\color{gray}{\FA \faMobile}}
-\def\home{\color{gray}{\FA \faHome}}
-\def\mail{\color{gray}{\FA \faEnvelopeAlt}}
-\def\globe{\color{gray}{\FA \faGlobe}}
-
-\def\circleFull{\small\color{gray}{\FA \faCircleFull}\hspace{0.15cm}}
-\def\circleEmpty{\small\color{gray}{\FA \faCircleEmpty}\hspace{0.15cm}}
-
-%-----------------------------------------------
-%	SKILLS SCALE COMMAND
-%-----------------------------------------------
-
-\newcommand{\skillScale}[1]
-{
-\ifnum#1=1
-    \circleFull\circleEmpty\circleEmpty\circleEmpty\circleEmpty
-\else\ifnum#1=2
-    \circleFull\circleFull\circleEmpty\circleEmpty\circleEmpty
-\else\ifnum#1=3
-    \circleFull\circleFull\circleFull\circleEmpty\circleEmpty
-\else\ifnum#1=4
-    \circleFull\circleFull\circleFull\circleFull\circleEmpty
-\else\ifnum#1=5
-    \circleFull\circleFull\circleFull\circleFull\circleFull
-\else 
-    \circleEmpty\circleEmpty\circleEmpty\circleEmpty\circleEmpty
-\fi\fi\fi\fi\fi
-}
-%
 \begin{document}
-%
+
 \header{Jean-Sébastien}{Gosselin}{Ingénieur Junior \& Doctorant en Hydrogéologie} % Your name and current job title/field
-%
+
 %-----------------------------------------------
 %	SIDEBAR SECTION (first page)
 %-----------------------------------------------
-%
+
 \begin{aside} % In the aside environment, each new line forces a line break
 	\section{contact}%
 	    \vspace{5pt}
 		\home\space 6100 Paul-Gury, \#307
 		\hspace{0.43cm}Québec, Qc, Canada
 		\hspace{0.43cm}G1P 4R3\vspace{5pt}
-		\phoneb\space (581) 996 4070
+		\phoneb \space (581) 996 4070
 		\href{mailto:jnsebgosselin@gmail.com}{\mail\space jnsebgosselin@gmail.com}
 		\vspace{10pt}%
 	\section{à propos}%
@@ -130,23 +83,23 @@
 		}
 \end{aside}
 %{\color{red} $\varheartsuit$}
-%
-%----------------------------------------------------------------------------------------
+
+%-----------------------------------------------
 %	SUMMARY SECTION
-%----------------------------------------------------------------------------------------
-%
+%-----------------------------------------------
+
 \section{résumé}
 %
 \normalfont{Je suis un professionnel qui termine actuellement un doctorat en hydrogéologie. Je possède une expérience académique et professionnelle diversifiée en physique, en modélisation et en informatique que je souhaite mettre à profit pour résoudre des problèmes techniques concrets et pointus dans le domaine des sciences de la Terre au Québec.}
-%
+
 %\setlength{\parindent}{15pt}Je suis une personne sociale en petit groupe qui aime travailler de manière autonome. J'ai un esprit inventif et débrouillard et j'aime élaborer des solutions originales. J'ai un souci du détail très prononcé. Je n'ai pas peur de relever de nouveaux défis, mais j'aime également avoir une certaine constance et routine dans mon travail.\setlength{\parindent}{0pt}
-%
-%----------------------------------------------------------------------------------------
+
+%-----------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-%
+%-----------------------------------------------
+
 \section{formation}
-%
+
 \begin{entrylist}
 %------------------------------------------------
 \entryMod
@@ -176,13 +129,13 @@
 {Cégep de Matane}
 %------------------------------------------------
 \end{entrylist}
-%
-%----------------------------------------------------------------------------------------
+
+%-----------------------------------------------
 %	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-%
+%-----------------------------------------------
+
 \section{expérience}
-%
+
 %------------------------------------------------
 \begin{entrylist}
   \entryBul
@@ -266,15 +219,15 @@
      \begin{itemize}[leftmargin=*]
        \setlength\itemsep{0pt}  
        \item inspection des nouvelles propriétés et des installations septiques.
-       \item gestion des plaintes et des demandes de permis mineurs déposés par les citoyens.
+       \item gestion des plaintes et des demandes de permis mineurs déposées par les citoyens.
      \end{itemize}
     }
 \end{entrylist}
-%
-%----------------------------------------------------------------------------------------
-%	SIDEBAR SECTION (Second Page)
-%----------------------------------------------------------------------------------------
-%
+
+%-----------------------------------------------
+%%	SIDEBAR SECTION (Second Page)
+%-----------------------------------------------
+
 \begin{aside2}
     \section{logiciels informatiques}
 	    \parbox[t]{4.5cm}{{\footnotesize\emph{Intérêt et capacité d'apprentissage de nouveaux logiciels élevés}}}
@@ -312,38 +265,38 @@
 	        Tecplot & \hfill \skillScale{1}        
 	    \end{tabular}        
         \vspace{-5pt}%
-    \section{intérêts personels}%
+    \section{intérêts personnels}%
         \vspace{10pt}
         Musique, Lecture,
         Logiciels Open Source,
         Nouvelles Technologies,
         Badminton et Vélo
 \end{aside2}
-%
-%----------------------------------------------------------------------------------------
+
+%-----------------------------------------------
 %	CERTIFICATION SECTION
-%----------------------------------------------------------------------------------------
-%
+%-----------------------------------------------
+
 \section{certifications}
   \begin{entrylist}
     \entryFULL
       {2014--Prés.}
       {Ordre des Ingénieurs du Québec}
       {}
-      {Ingénieur Junior - License 5055656}
+      {Ingénieur Junior - Licence 5055656}
       {}
 %------------------------------------------------
     \entryFULL
       {2003--Prés.}
       {ASP Construction}
       {}
-      {Attestation cours santé et sécurité générale sur les chantiers de construction\\License 98720}
+      {Attestation cours santé et sécurité générale sur les chantiers de construction\\Licence 98720}
       {}
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------
 %	COMPÉTENCE SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------
 %
 %\section{formations autres}
 %  \begin{entrylist}
@@ -361,11 +314,13 @@
 %      {Lena Patsa, University of British Columbia\\Formation Divex, INRS-ETE, Québec, Qc}
 %      {}
 %\end{entrylist}
-%
-%----------------------------------------------------------------------------------------
+
+%-----------------------------------------------
 %	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------
+
 %\newgeometry{left=1.5cm,top=2cm,right=1.5cm,bottom=2cm,nohead,nofoot}
+
 \section{communications notables}
 \textbf{\large écrites}\vspace{10pt}\\
 \begin{entrylist}
@@ -436,32 +391,5 @@ groundwater recharge.}
 %{Présentation par Affiche - Français}
 %{Jean-Sébastien Gosselin, Christine Rivard, Richard Martel et Claudio Paniconi\\Colloque sur les Eaux Souterraines, Université du Québec à Chicoutimi, Chicoutimi}
 \end{entrylist}
-
-
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{publications}
-
-%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
-
-%\printbibsection{book}{books} % Print all books from the bibliography
-
-%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
-%\nocite{*}
-%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-%\end{refsection}
-
-%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
-%\nocite{*}
-%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-%\end{refsection}
-
-%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
-
-%\printbibsection{report}{research reports} % Print all research reports from the bibliography
 
 \end{document}

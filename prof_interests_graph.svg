@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="competences_cercles.svg">
+   sodipodi:docname="prof_interests_graph.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,17 +25,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="67.742042"
-     inkscape:cy="48.250655"
+     inkscape:cx="87.50844"
+     inkscape:cy="67.398586"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="mm"
-     inkscape:window-width="1535"
-     inkscape:window-height="876"
-     inkscape:window-x="65"
+     inkscape:window-width="767"
+     inkscape:window-height="848"
+     inkscape:window-x="309"
      inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -142,55 +142,57 @@
     <text
        xml:space="preserve"
        style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="-3.5659339"
-       y="976.02026"
-       id="text4083-1-9-4"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0002021,0.99979795)"><tspan
-         sodipodi:role="line"
-         id="tspan4085-1-4-3"
-         x="-3.5659339"
-         y="976.02026"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'">Relationel</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="1.9824787"
-       y="921.36816"
+       x="1.9824796"
+       y="919.93933"
        id="text4083-1-9-4-2"
        sodipodi:linespacing="125%"
        transform="scale(1.0002021,0.99979795)"><tspan
          sodipodi:role="line"
          id="tspan4085-1-4-3-1"
-         x="1.9824787"
-         y="921.36816"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'">Communication</tspan></text>
+         x="1.9824796"
+         y="919.93933"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'">Communication</tspan><tspan
+         sodipodi:role="line"
+         x="1.9824796"
+         y="932.43933"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
+         id="tspan3036">&amp; Pédagogie</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="132.27847"
-       y="923.64331"
+       x="129.42191"
+       y="1021.163"
        id="text4083-1-9-4-24-5-1"
        sodipodi:linespacing="125%"
        transform="scale(1.0002021,0.99979795)"><tspan
          sodipodi:role="line"
-         x="132.27847"
-         y="923.64331"
+         x="129.42191"
+         y="1021.163"
          style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
-         id="tspan4222">Innovation</tspan></text>
+         id="tspan4222">Innovation</tspan><tspan
+         sodipodi:role="line"
+         x="129.42191"
+         y="1033.663"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
+         id="tspan3038">&amp; Créativité</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="67.109398"
-       y="1041.6537"
+       x="64.966972"
+       y="1036.2955"
        id="text4083-5"
        sodipodi:linespacing="125%"
        transform="scale(1.0002021,0.99979795)"><tspan
          sodipodi:role="line"
-         x="67.109398"
-         y="1041.6537"
+         x="64.966972"
+         y="1036.2955"
          style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
-         id="tspan3968">Résolution</tspan></text>
+         id="tspan3968">Résolution</tspan><tspan
+         sodipodi:role="line"
+         x="64.966972"
+         y="1048.7955"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
+         id="tspan3040">de Problèmes</tspan></text>
     <path
        style="fill:#808080;stroke:#4d4d4d;stroke-width:0.49999991;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m 140.78437,972.90872 c -95.120827,0 -101.543695,0 -101.543695,0"
@@ -209,16 +211,21 @@
     <text
        xml:space="preserve"
        style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="132.9583"
-       y="1021.5945"
+       x="-0.94321477"
+       y="971.22711"
        id="text4083-1-9-4-2-0"
        sodipodi:linespacing="125%"
        transform="scale(1.0002021,0.99979795)"><tspan
          sodipodi:role="line"
-         x="132.9583"
-         y="1021.5945"
+         x="-0.94321477"
+         y="971.22711"
          style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
-         id="tspan3990">Travail</tspan></text>
+         id="tspan3990">Travaux</tspan><tspan
+         sodipodi:role="line"
+         x="-0.94321477"
+         y="983.72711"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
+         id="tspan3034">de Terrain</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3970"
@@ -230,22 +237,9 @@
            height="46.785713"
            x="-45"
            y="39.609795" /></flowRegion><flowPara
-         id="flowPara3976"></flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="2.2758005"
-       y="930.88751"
-       id="text4083-1-9-4-2-8"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0002021,0.99979795)"><tspan
-         sodipodi:role="line"
-         id="tspan4085-1-4-3-1-2"
-         x="2.2758005"
-         y="930.88751"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'">&amp; Pédagogie</tspan></text>
-    <path
+         id="flowPara3976" /></flowRoot>    <path
        style="fill:none;stroke:#2b4172;stroke-width:2.49999976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 90.038072,922.36962 -17.963802,32.61956 8.42775,18.00157 -19.161248,28.71915 28.633272,17.3504 18.112626,-28.10139 1.8376,-17.94503 8.71679,-28.12139 z"
+       d="m 90.038072,922.36962 -17.963802,32.61956 -6.929393,17.64443 -3.804105,29.07629 28.859659,21.8625 24.671949,-25.47063 -4.94811,-25.08789 8.71679,-28.12139 z"
        id="path4066"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc" />
@@ -278,7 +272,7 @@
        sodipodi:rx="1.8940361"
        sodipodi:ry="1.8940361"
        d="m 9.5964491,68.826485 c 0,1.046047 -0.8479888,1.894036 -1.894036,1.894036 -1.0460472,0 -1.8940361,-0.847989 -1.8940361,-1.894036 0,-1.046048 0.8479889,-1.894036 1.8940361,-1.894036 1.0460472,0 1.894036,0.847988 1.894036,1.894036 z"
-       transform="matrix(1.2770061,0,0,1.2768093,70.571312,885.28745)" />
+       transform="matrix(1.2770061,0,0,1.2768093,55.214169,884.93031)" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:#2b4172;stroke-width:1.17471302;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -318,7 +312,7 @@
        sodipodi:rx="1.8940361"
        sodipodi:ry="1.8940361"
        d="m 9.5964491,68.826485 c 0,1.046047 -0.8479888,1.894036 -1.894036,1.894036 -1.0460472,0 -1.8940361,-0.847989 -1.8940361,-1.894036 0,-1.046048 0.8479889,-1.894036 1.8940361,-1.894036 1.0460472,0 1.894036,0.847988 1.894036,1.894036 z"
-       transform="matrix(1.2770061,0,0,1.2768093,98.063734,903.32726)" />
+       transform="matrix(1.2770061,0,0,1.2768093,105.20659,910.47012)" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:#2b4172;stroke-width:1.17471302;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -328,31 +322,18 @@
        sodipodi:rx="1.8940361"
        sodipodi:ry="1.8940361"
        d="m 9.5964491,68.826485 c 0,1.046047 -0.8479888,1.894036 -1.894036,1.894036 -1.0460472,0 -1.8940361,-0.847989 -1.8940361,-1.894036 0,-1.046048 0.8479889,-1.894036 1.8940361,-1.894036 1.0460472,0 1.894036,0.847988 1.894036,1.894036 z"
-       transform="matrix(1.2770061,0,0,1.2768093,80.267409,930.86519)" />
+       transform="matrix(1.2770061,0,0,1.2768093,80.278242,935.64515)" />
     <text
        xml:space="preserve"
        style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="131.80453"
-       y="933.59418"
-       id="text4083-1-9-4-2-8-7"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0002021,0.99979795)"><tspan
-         sodipodi:role="line"
-         id="tspan4085-1-4-3-1-2-0"
-         x="131.80453"
-         y="933.59418"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'">&amp; Créativité</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="5.3000154"
-       y="1025.4238"
+       x="5.5525026"
+       y="1020.6246"
        id="text4083-3"
        sodipodi:linespacing="125%"
        transform="scale(1.0002021,0.99979795)"><tspan
          sodipodi:role="line"
-         x="5.3000154"
-         y="1025.4238"
+         x="5.5525026"
+         y="1020.6246"
          style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
          id="tspan4078">Géosciences</tspan></text>
     <text
@@ -368,19 +349,6 @@
          y="1026.1598"
          style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
          id="tspan4078-7" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="132.85202"
-       y="1030.7241"
-       id="text4083-1-9-4-2-0-1"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0002021,0.99979795)"><tspan
-         sodipodi:role="line"
-         x="132.85202"
-         y="1030.7241"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
-         id="tspan3990-2">d'équipe</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4143"
@@ -392,18 +360,33 @@
            height="27.678572"
            x="128.92857"
            y="94.893219" /></flowRegion><flowPara
-         id="flowPara4149"></flowPara></flowRoot>    <text
+         id="flowPara4149" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
-       x="67.402367"
-       y="1051.0632"
-       id="text4083-5-4"
+       style="font-size:13.87825203px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
+       x="126.57886"
+       y="920.96509"
+       id="text4083-1-9-4-0"
        sodipodi:linespacing="125%"
        transform="scale(1.0002021,0.99979795)"><tspan
          sodipodi:role="line"
-         x="67.402367"
-         y="1051.0632"
+         id="tspan4085-1-4-3-7"
+         x="126.57886"
+         y="920.96509"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'">Modélisation</tspan><tspan
+         sodipodi:role="line"
+         x="126.57886"
+         y="933.46509"
          style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;font-family:Roboto Condensed;-inkscape-font-specification:'Roboto Condensed,'"
-         id="tspan3968-0">de Problèmes</tspan></text>
-  </g>
+         id="tspan3071">Numérique</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3063"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Roboto;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion3065"><rect
+           id="rect3067"
+           width="51.07143"
+           height="41.07143"
+           x="-61.42857"
+           y="118.10812" /></flowRegion><flowPara
+         id="flowPara3069" /></flowRoot>  </g>
 </svg>
