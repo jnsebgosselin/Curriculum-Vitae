@@ -19,7 +19,4 @@ the Creative Commons nonprofit organization.
 
 This work is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the CC BY-NC-SA 3.0 License for more details.
-
-You should have received a copy of the CC BY-NC-SA 3.0
-along with this work.  If not, see <http://creativecommons.org/licenses/by-nc-sa/3.0/>
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the CC BY-NC-SA 3.0 License for more details at [<http://creativecommons.org/licenses/by-nc-sa/3.0/>](http://creativecommons.org/licenses/by-nc-sa/3.0/).
