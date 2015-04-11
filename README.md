@@ -13,7 +13,7 @@ Copyright (C) 2014 LaTeX Templates
 
 Copyright (C) 2012 Adrien Friggeri
 
-## sublicense
+## sublicense (by LaTeX Templates)
 
 CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
