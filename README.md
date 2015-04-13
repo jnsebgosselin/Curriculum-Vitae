@@ -7,7 +7,9 @@ It is typesetted in [Roboto](http://developer.android.com/design/style/typograph
 
 # Preview
 
-![Preview First Page](https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv1.png)
+<p align="center">
+  <img src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv1.png" width="90%"/>
+</p>
 
 # License
 
