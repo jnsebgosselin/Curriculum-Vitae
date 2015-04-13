@@ -5,6 +5,15 @@ by [Adrien Friggeri](https://github.com/afriggeri/cv) and that has later been mo
 
 It is typesetted in [Roboto](http://developer.android.com/design/style/typography.html), a free font family developed by Google as the system font for its Android operating system. The original design of this template was typesetted in [Helvetica Neue](http://www.linotype.com/1266/neuehelvetica-family.html). This option is still present in the code if you have access to and prefer this option. The "Professional Interests" graph has been done with [Inkscape](https://inkscape.org/en/) and [FontAwesome](http://fortawesome.github.io/Font-Awesome/) is used for the icons.
 
+# Preview
+
+<table border="0">
+  <tr>
+    <td align="center" bgcolor=white><img width=100% src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv1.png"></td>
+    <td align="center"><img width=100% src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv2.png"></td>
+  </tr>
+</table>
+
 # License
 
 Copyright (C) 2015 Jean-Sébastien Gosselin
