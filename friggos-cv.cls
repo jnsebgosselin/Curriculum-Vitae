@@ -108,21 +108,18 @@
 % https://coderwall.com/p/r67dyq/using-font-awesome-with-xe-latex
 %http://tex.stackexchange.com/questions/134121/fontawesome-icons-are-getting-too-big-using-xelatex/134244#134244
 
-\usepackage{fontawesome}
-\newfontfamily\FA[Path = fonts/]{fontawesome-webfont}
+\newfontfamily{\FA}[Path = fonts/]{fontawesome-webfont}
 
-\def\github{\color{gray}{\FA \faGithubSign}}
-\def\facebook{\color{gray}{\FA \faFacebookSign}}
-\def\linkedin{\color{gray}{\FA \faLinkedinSign}}
-\def\phonea{\color{gray}{\FA \faPhone}}
-\def\phoneb{\color{gray}{\FA \faPhoneSign}}
-\def\phonec{\color{gray}{\FA \faMobile}}
-\def\home{\color{gray}{\FA \faHome}}
-\def\mail{\color{gray}{\FA \faEnvelopeAlt}}
-\def\globe{\color{gray}{\FA \faGlobe}}
+\def\github{\color{gray}{\FA\symbol{"F092}}}
+\def\facebook{\color{gray}{\FA\symbol{"F082}}}
+\def\linkedin{\color{gray}{\FA\symbol{"F08C}}}
+\def\phoneb{\color{gray}{\FA\symbol{"F098}}}
+\def\home{\color{gray}{\FA\symbol{"F015}}}
+\def\mail{\color{gray}{\FA\symbol{"F0E0}}}
+\def\globe{\color{gray}{\FA\symbol{"F0AC}}}
 
-\def\circleFull{\small\color{gray}{\FA \faCircleFull}\hspace{0.15cm}}
-\def\circleEmpty{\small\color{gray}{\FA \faCircleEmpty}\hspace{0.15cm}}
+\def\circleFull{\small\color{gray}{\FA\symbol{"F111}}\hspace{0.15cm}}
+\def\circleEmpty{\small\color{gray}{\FA\symbol{"F10C}}\hspace{0.15cm}}
 
 \newcommand{\skillScale}[1]
 {
