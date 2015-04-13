@@ -7,7 +7,7 @@ It is typesetted in [Roboto](http://developer.android.com/design/style/typograph
 
 # Preview
 
-<table>
+<table border="0">
   <tr>
     <td align="center" bgcolor=white><img width=100% src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv1.png"></td>
     <td align="center"><img width=100% src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv2.png"></td>
