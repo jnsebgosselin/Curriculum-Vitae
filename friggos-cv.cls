@@ -1,3 +1,25 @@
+%===============================================
+%
+% This work is part of Friggeri-CV-Modified
+%
+% Copyright (C) 2015 Jean-Sébastien Gosselin
+% https://github.com/jnsebgosselin/Curriculum-Vitae
+%
+% Copyright (C) 2014 LaTeX Templates
+% http://www.LaTeXTemplates.com
+%
+% Copyright (C) 2012 Adrien Friggeri (adrien@friggeri.net) 
+% https://github.com/afriggeri/CV
+%
+% This work is free software: you can redistribute it and/or modify it under the terms of the CC BY-NC-SA 3.0 License as published by the Creative Commons nonprofit organization.
+%
+% This work is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the CC BY-NC-SA 3.0 License for more details at http://creativecommons.org/licenses/by-nc-sa/3.0/.
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used, needs to be compiled with biber rather than bibtex.
+%
+%===============================================
+
 \ProvidesClass{friggos-cv}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
@@ -25,17 +47,17 @@
 \definecolor{blue}{HTML}{6CE0F1}
 
 \ifdefined\@cv@print
-  \colorlet{green}{gray}
-  \colorlet{orange}{gray}
-  \colorlet{purple}{gray}
-  \colorlet{brown}{gray}
-  \colorlet{red}{gray}
-  \colorlet{blue}{gray}
-  \colorlet{fillheader}{gray}
-  \colorlet{header}{white}
+    \colorlet{green}{gray}
+    \colorlet{orange}{gray}
+    \colorlet{purple}{gray}
+    \colorlet{brown}{gray}
+    \colorlet{red}{gray}
+    \colorlet{blue}{gray}
+    \colorlet{fillheader}{gray}
+    \colorlet{header}{white}
 \else
-  \colorlet{fillheader}{gray}
-  \colorlet{header}{white}
+    \colorlet{fillheader}{gray}
+    \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
@@ -66,7 +88,7 @@
 %\newfontfamily\bodyfont[]{HelveticaNeueLTStd-Lt}
 %\newfontfamily\thinfont[]{HelveticaNeueLTStd-UltLt}
 %\newfontfamily\headingfont[]{HelveticaNeueLTStd-BdCn}
-
+%
 %\defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[Mapping=tex-text, Color=textcolor]{HelveticaNeueLTStd-Lt}
 
