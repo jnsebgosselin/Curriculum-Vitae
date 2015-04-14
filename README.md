@@ -8,7 +8,7 @@ It is typesetted in [Roboto](http://developer.android.com/design/style/typograph
 # Preview
 
 <p align="center">
-  <img src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv1.png" width="90%"/>
+  <img src="https://github.com/jnsebgosselin/Curriculum-Vitae/blob/master/img/cv300.png" width="90%"/>
 </p>
 
 # License
