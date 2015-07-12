@@ -283,6 +283,8 @@
   \let\section\oldsection
 }
 
+% New aside to go on pages without a Header
+
 \newenvironment{aside2}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
